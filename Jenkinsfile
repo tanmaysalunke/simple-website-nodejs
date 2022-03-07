@@ -9,7 +9,9 @@ pipeline {
         }
         stage('Deploy') {
             steps {
+                echo "machine Starting"
                 sh "npm start"
+                echo "machine Started"
             }
         }
     }
